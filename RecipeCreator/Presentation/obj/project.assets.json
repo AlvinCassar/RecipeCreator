@@ -1698,6 +1698,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "Domain": "1.0.0",
           "Microsoft.AspNetCore.ApiAuthorization.IdentityServer": "3.1.11",
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "3.1.11",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "3.1.11",
@@ -1712,6 +1713,16 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Domain.dll": {}
+        }
       }
     }
   },
@@ -6066,6 +6077,11 @@
       "type": "project",
       "path": "../Data/Data.csproj",
       "msbuildProject": "../Data/Data.csproj"
+    },
+    "Domain/1.0.0": {
+      "type": "project",
+      "path": "../Domain/Domain.csproj",
+      "msbuildProject": "../Domain/Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {

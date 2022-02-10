@@ -1,4 +1,4 @@
-using Data.Data;
+using Data.Context;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -23,7 +23,7 @@ namespace Presentation
                 var services = scope.ServiceProvider;
                 try
                 {
-                    var context = services.GetRequiredService<ApplicationDbContext>();
+                    var context = services.GetRequiredService<RecipeContext>();
                     context.Database.Migrate();
                 }
                 catch (Exception ex)

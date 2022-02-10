@@ -4,11 +4,11 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Data.Data
+namespace Data.Context
 {
-    public class ApplicationDbContext : IdentityDbContext
+    public class RecipeContext : IdentityDbContext
     {
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+        public RecipeContext(DbContextOptions<RecipeContext> options)
             : base(options)
         {
         }
