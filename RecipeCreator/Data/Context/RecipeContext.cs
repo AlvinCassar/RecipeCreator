@@ -1,8 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Text;
+using Domain.Models;
 
 namespace Data.Context
 {
@@ -10,7 +8,12 @@ namespace Data.Context
     {
         public RecipeContext(DbContextOptions<RecipeContext> options)
             : base(options)
+        { }
+
+        public DbSet<FullRecipe> FullRecipe { get; set; }
+        /*protected override void OnConfiguring(DbContextOptionsBuilder optionBuilder)
         {
-        }
+            optionBuilder.UseLazyLoadingProxies();
+        }*/
     }
 }

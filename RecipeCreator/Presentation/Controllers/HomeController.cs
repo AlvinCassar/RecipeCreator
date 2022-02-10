@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Application.ViewModels;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Presentation.Models;
 using System;
@@ -23,10 +25,23 @@ namespace Presentation.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+       /* [HttpPost]
+        public IActionResult AddRecipe(FullRecipeViewModel model)
         {
+            if (string.IsNullOrEmpty(model.Title) || string.IsNullOrEmpty(model.Instruction))
+            {
+                //ViewBag.Error = "Should not be left Empty";
+                Debug.WriteLine("Empty field");
+
+            }
+            else
+            {
+                Debug.WriteLine("Not Empty");
+            }
+
             return View();
-        }
+        }*/
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
