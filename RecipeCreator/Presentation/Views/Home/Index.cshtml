@@ -1,17 +1,30 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Add Recipes";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Add Recipes Here</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h3 class="display-4">Add Recipes Here</h3>
     
     <form>
-        <label>Title: </label>
-        <input placeholder="title:" />
+        <div class="form-group  mt-10 row">
+            <div class="col-2">
+                <label for="titleInput"> Recipe Title:</label>
+            </div>
 
-        <textarea></textarea>
+            <div class="col-10">
+                <input type="text" class="form-control" id="titleInput" placeholder="example: Roasted Potatoes">
+            </div>
+        </div>
 
-        <button>Submit</button>
+        <div class="form-group mt-5 row">
+            <div class="col-2">
+                <label for="stepsInput">Recipe Steps:</label>
+            </div>
+            <div class="col-10">
+                <textarea class="form-control" id="stepsInput" rows="10"></textarea>
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary" mt-2>Add Recipe</button>
     </form>
 </div>
