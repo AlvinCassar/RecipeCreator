@@ -17,7 +17,7 @@ namespace Data.Repositories
 
         public void AddRecipe(FullRecipe r)
         {
-            //context.Recipe.Add(r);
+            context.FullRecipe.Add(r);
             context.SaveChanges();
         }
     }

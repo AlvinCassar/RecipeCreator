@@ -5,38 +5,4 @@
 <div class="text-center">
     <h3 class="display-4">HOME</h3>
 
-  @*  @page
-    @model Presentation.Views.RecipeForm.AddRecipeModel
-    @{
-        ViewData["Title"] = "Add Recipe";
-    }
-
-    <div class="text-center">
-        <h3 class="display-4">Add Recipes Here</h3>
-
-        <form method="post" asp-action="AddRecipe" enctype="multipart/form-data">
-            <div class="form-group  mt-10 row">
-                <div class="col-2">
-                    <label for="Title"> Recipe Title:</label>
-                </div>
-
-                <div class="col-10">
-                    <input type="text" class="form-control" id="Title" placeholder="example: Roasted Potatoes" required>
-                </div>
-            </div>
-
-            <div class="form-group mt-5 row">
-                <div class="col-2">
-                    <label for="Instructions">Recipe Steps:</label>
-                </div>
-                <div class="col-10">
-                    <textarea class="form-control" id="Instructions" rows="10" required></textarea>
-                </div>
-            </div>
-
-            <button type="submit" class="btn btn-primary" mt-2>Add Recipe</button>
-        </form>
-    </div>*@
-
-
 </div>

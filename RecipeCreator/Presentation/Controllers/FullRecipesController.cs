@@ -9,55 +9,47 @@ using Data.Context;
 using Domain.Models;
 using Application.ViewModels;
 using System.Diagnostics;
+using Application.Interfaces;
+using Microsoft.AspNetCore.Hosting;
 
 namespace Presentation.Controllers
 {
     public class FullRecipesController : Controller
     {
-        private readonly RecipeContext _context;
+       /* private IRecipeService recipeService;
+        private IWebHostEnvironment webHostEnvironment;
 
-        public FullRecipesController(RecipeContext context)
+        public FullRecipesController(IRecipeService _recipeService, IWebHostEnvironment _webHostEnvironment)
         {
-            _context = context;
+            webHostEnvironment = _webHostEnvironment;
+            recipeService = _recipeService;
         }
-
-
-        // GET: FullRecipes/Create
-        public IActionResult Create(FullRecipeViewModel model)
+*/
+        public IActionResult Index()
         {
-            if (string.IsNullOrEmpty(model.Title) || string.IsNullOrEmpty(model.Instruction))
-            {
-                //ViewBag.Error = "Should not be left Empty";
-                Debug.WriteLine("Empty field");
-
-            }
-            else
-            {
-                Debug.WriteLine("Not Empty");
-            }
-
             return View();
         }
 
-        // POST: FullRecipes/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Title,Instruction")] FullRecipe fullRecipe)
+        public IActionResult Index(FullRecipeViewModel model)
         {
-            if (ModelState.IsValid)
+            if (string.IsNullOrEmpty(model.Title) || string.IsNullOrEmpty(model.Instruction))
             {
-                _context.Add(fullRecipe);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                ViewBag.Error = "Should not be left empty";
+                Debug.WriteLine("Fields Cannot be left Empty");
+                return View();
             }
-            return View(fullRecipe);
-        }
 
-        private bool FullRecipeExists(int id)
-        {
-            return _context.FullRecipe.Any(e => e.Id == id);
+            Debug.WriteLine("Both Title and Instructions Filled :)");
+            Debug.WriteLine("Title: "+ model.Title);
+            Debug.WriteLine("Instru: "+ model.Instruction);
+
+            //Now split the instructions where the is /n and put in list. Than check count of list so you know how many steps (or in for each)
+            //than 1st step is Title + v1
+            //2nd step is title + v2 and so on.
+            //stop adding steps when amount of steps finish.
+
+            return RedirectToAction("Index");
         }
     }
 }

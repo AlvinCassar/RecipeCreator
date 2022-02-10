@@ -18,13 +18,13 @@ namespace Application.Services
             recipeRepository = _recipeRepository;
         }
 
-        public void AddRecipe(FullRecipe recipe)
+        public void AddRecipe(FullRecipeViewModel model)
         {
             recipeRepository.AddRecipe(new Domain.Models.FullRecipe()
             {
-                Id = recipe.Id,
-                Title = recipe.Title,
-                Instruction = recipe.Instruction
+                Id = model.Id,
+                Title = model.Title,
+                Instruction = model.Instruction
             });
             
         }

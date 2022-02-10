@@ -1,4 +1,5 @@
-﻿using Domain.Models;
+﻿using Application.ViewModels;
+using Domain.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -10,7 +11,7 @@ namespace Application.Interfaces
 {
     public interface IRecipeService
     {
-        public void AddRecipe(FullRecipe recipe);
+        public void AddRecipe(FullRecipeViewModel model);
        
     }
 }
