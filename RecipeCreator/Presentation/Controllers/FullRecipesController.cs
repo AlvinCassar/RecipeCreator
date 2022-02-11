@@ -16,7 +16,7 @@ namespace Presentation.Controllers
 {
     public class FullRecipesController : Controller
     {
-       /* private IRecipeService recipeService;
+        private IRecipeService recipeService;
         private IWebHostEnvironment webHostEnvironment;
 
         public FullRecipesController(IRecipeService _recipeService, IWebHostEnvironment _webHostEnvironment)
@@ -24,7 +24,7 @@ namespace Presentation.Controllers
             webHostEnvironment = _webHostEnvironment;
             recipeService = _recipeService;
         }
-*/
+
         public IActionResult Index()
         {
             return View();
@@ -35,19 +35,22 @@ namespace Presentation.Controllers
         {
             if (string.IsNullOrEmpty(model.Title) || string.IsNullOrEmpty(model.Instruction))
             {
+                //this is used only 
                 ViewBag.Error = "Should not be left empty";
-                Debug.WriteLine("Fields Cannot be left Empty");
                 return View();
             }
 
-            Debug.WriteLine("Both Title and Instructions Filled :)");
-            Debug.WriteLine("Title: "+ model.Title);
-            Debug.WriteLine("Instru: "+ model.Instruction);
+            string[] stepbystep = model.Instruction.Split("\n");
 
-            //Now split the instructions where the is /n and put in list. Than check count of list so you know how many steps (or in for each)
-            //than 1st step is Title + v1
-            //2nd step is title + v2 and so on.
-            //stop adding steps when amount of steps finish.
+            string ogTitle = model.Title;
+            int counter = 0;
+
+            foreach (string step in stepbystep)
+            {
+                model.Title = ogTitle + " - V" + ++counter;
+                model.Instruction = step;
+                recipeService.AddRecipe(model);
+            }
 
             return RedirectToAction("Index");
         }

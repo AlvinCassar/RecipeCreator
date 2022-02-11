@@ -12,9 +12,9 @@ namespace Data.Context
 
         public DbSet<FullRecipe> FullRecipe { get; set; }
 
-        /*protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseLazyLoadingProxies();
-        }*/
+        }
     }
 }

@@ -25,24 +25,6 @@ namespace Presentation.Controllers
             return View();
         }
 
-       /* [HttpPost]
-        public IActionResult AddRecipe(FullRecipeViewModel model)
-        {
-            if (string.IsNullOrEmpty(model.Title) || string.IsNullOrEmpty(model.Instruction))
-            {
-                //ViewBag.Error = "Should not be left Empty";
-                Debug.WriteLine("Empty field");
-
-            }
-            else
-            {
-                Debug.WriteLine("Not Empty");
-            }
-
-            return View();
-        }*/
-
-
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
