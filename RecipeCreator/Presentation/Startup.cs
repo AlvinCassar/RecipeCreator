@@ -37,11 +37,22 @@ namespace Presentation
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
                 .AddEntityFrameworkStores<RecipeContext>();
 
+            services.Configure<AppSettings>(Configuration.GetSection("AppSettings"));
+
+
             services.AddControllersWithViews();
             services.AddRazorPages();
 
-            services.AddScoped<IRecipeRepository, RecipeRepository>();
             services.AddScoped<IRecipeService, RecipeService>();
+
+            if (Configuration.GetValue<bool>("RecipeSaveToFile"))
+            {
+                services.AddScoped<IRecipeRepository, RecipeRepositoryToFile>();
+            }
+            else
+            {
+                services.AddScoped<IRecipeRepository, RecipeRepository>();
+            }
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

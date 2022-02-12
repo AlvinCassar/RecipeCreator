@@ -7,7 +7,7 @@ using System.Text;
 
 namespace Data.Repositories
 {
-    public class RecipeRepository : IRecipeRepository
+    public class RecipeRepository : IRecipeRepository //THIS IS TO SAVE TO DATABASE 
     {
         private RecipeContext context;
         public RecipeRepository(RecipeContext _context)

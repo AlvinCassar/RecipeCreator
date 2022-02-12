@@ -11,6 +11,7 @@ using Application.ViewModels;
 using System.Diagnostics;
 using Application.Interfaces;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Options;
 
 namespace Presentation.Controllers
 {
@@ -33,6 +34,7 @@ namespace Presentation.Controllers
         [HttpPost]
         public IActionResult Index(FullRecipeViewModel model)
         {
+
             if (string.IsNullOrEmpty(model.Title) || string.IsNullOrEmpty(model.Instruction))
             {
                 //this is used only 

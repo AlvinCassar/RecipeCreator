@@ -18,16 +18,14 @@ namespace Application.Services
             recipeRepository = _recipeRepository;
         }
 
-        public void AddRecipe(FullRecipeViewModel model)
+        public void AddRecipe(FullRecipeViewModel model) //if true save in file / if false save in database (saveOption)
         {
-            recipeRepository.AddRecipe(new Domain.Models.FullRecipe()
+            recipeRepository.AddRecipe(new FullRecipe()
             {
                 Id = model.Id,
                 Title = model.Title,
                 Instruction = model.Instruction
             });
-            
         }
-
     }
 }
