@@ -1,6 +1,5 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -11,10 +10,6 @@ using Data.Repositories;
 using Domain.Interfaces;
 using Application.Interfaces;
 using Application.Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Presentation
 {
@@ -36,9 +31,6 @@ namespace Presentation
 
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
                 .AddEntityFrameworkStores<RecipeContext>();
-
-            services.Configure<AppSettings>(Configuration.GetSection("AppSettings"));
-
 
             services.AddControllersWithViews();
             services.AddRazorPages();

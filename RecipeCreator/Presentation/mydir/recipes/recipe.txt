@@ -1,1 +1,5 @@
-Recipe Instruction:d - V1	 - 	d
+Recipe Title:Pesto Pasta
+Step 1: Boil waterStep 2: add pasta to boiling waterStep 3: remove waterStep 4: add pesto and mixStep 5: Enjoy meal
+
+Recipe Title:Pestini Pasta
+Step 1: Boil waterStep 2: add pasta to boiling water

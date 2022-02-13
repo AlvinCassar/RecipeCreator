@@ -2,7 +2,6 @@
 using Domain.Models;
 using System.IO;
 using System.Collections.Generic;
-using System.Text;
 using System.Diagnostics;
 
 namespace Data.Repositories
@@ -19,7 +18,17 @@ namespace Data.Repositories
 
             fullPath += "\\recipe.txt";
 
-            File.AppendAllText(fullPath, "Recipe Instruction:" + r.Title +"\t - \t" + r.Instruction + "\n");
+            File.AppendAllText(fullPath, "\n\nRecipe Title:" + r.Title +"\n"); //put title at the top in the textfile.
+
+            string[] stepbystep = r.Instruction.Split("\n");
+
+            int counter = 0;
+
+            foreach (string step in stepbystep)
+            {
+                File.AppendAllText(fullPath, "Step " + ++counter + ": " + step);
+            }
+
             Debug.WriteLine("Added to File");
         }
     }
