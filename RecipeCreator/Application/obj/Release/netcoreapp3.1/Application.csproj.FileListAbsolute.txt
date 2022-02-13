@@ -1,0 +1,12 @@
+C:\Users\Alvin\Documents\GitHub\RecipeCreator\RecipeCreator\Application\bin\Release\netcoreapp3.1\Application.deps.json
+C:\Users\Alvin\Documents\GitHub\RecipeCreator\RecipeCreator\Application\bin\Release\netcoreapp3.1\Application.dll
+C:\Users\Alvin\Documents\GitHub\RecipeCreator\RecipeCreator\Application\bin\Release\netcoreapp3.1\Application.pdb
+C:\Users\Alvin\Documents\GitHub\RecipeCreator\RecipeCreator\Application\bin\Release\netcoreapp3.1\Domain.dll
+C:\Users\Alvin\Documents\GitHub\RecipeCreator\RecipeCreator\Application\bin\Release\netcoreapp3.1\Domain.pdb
+C:\Users\Alvin\Documents\GitHub\RecipeCreator\RecipeCreator\Application\obj\Release\netcoreapp3.1\Application.csprojAssemblyReference.cache
+C:\Users\Alvin\Documents\GitHub\RecipeCreator\RecipeCreator\Application\obj\Release\netcoreapp3.1\Application.AssemblyInfoInputs.cache
+C:\Users\Alvin\Documents\GitHub\RecipeCreator\RecipeCreator\Application\obj\Release\netcoreapp3.1\Application.AssemblyInfo.cs
+C:\Users\Alvin\Documents\GitHub\RecipeCreator\RecipeCreator\Application\obj\Release\netcoreapp3.1\Application.csproj.CoreCompileInputs.cache
+C:\Users\Alvin\Documents\GitHub\RecipeCreator\RecipeCreator\Application\obj\Release\netcoreapp3.1\Application.csproj.CopyComplete
+C:\Users\Alvin\Documents\GitHub\RecipeCreator\RecipeCreator\Application\obj\Release\netcoreapp3.1\Application.dll
+C:\Users\Alvin\Documents\GitHub\RecipeCreator\RecipeCreator\Application\obj\Release\netcoreapp3.1\Application.pdb

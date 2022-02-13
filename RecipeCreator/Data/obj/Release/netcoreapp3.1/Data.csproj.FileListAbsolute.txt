@@ -1,0 +1,15 @@
+C:\Users\Alvin\Documents\GitHub\RecipeCreator\RecipeCreator\Data\bin\Release\netcoreapp3.1\Data.deps.json
+C:\Users\Alvin\Documents\GitHub\RecipeCreator\RecipeCreator\Data\bin\Release\netcoreapp3.1\Data.runtimeconfig.json
+C:\Users\Alvin\Documents\GitHub\RecipeCreator\RecipeCreator\Data\bin\Release\netcoreapp3.1\Data.runtimeconfig.dev.json
+C:\Users\Alvin\Documents\GitHub\RecipeCreator\RecipeCreator\Data\bin\Release\netcoreapp3.1\Data.dll
+C:\Users\Alvin\Documents\GitHub\RecipeCreator\RecipeCreator\Data\bin\Release\netcoreapp3.1\Data.pdb
+C:\Users\Alvin\Documents\GitHub\RecipeCreator\RecipeCreator\Data\bin\Release\netcoreapp3.1\Domain.dll
+C:\Users\Alvin\Documents\GitHub\RecipeCreator\RecipeCreator\Data\bin\Release\netcoreapp3.1\Domain.pdb
+C:\Users\Alvin\Documents\GitHub\RecipeCreator\RecipeCreator\Data\obj\Release\netcoreapp3.1\Data.csprojAssemblyReference.cache
+C:\Users\Alvin\Documents\GitHub\RecipeCreator\RecipeCreator\Data\obj\Release\netcoreapp3.1\Data.AssemblyInfoInputs.cache
+C:\Users\Alvin\Documents\GitHub\RecipeCreator\RecipeCreator\Data\obj\Release\netcoreapp3.1\Data.AssemblyInfo.cs
+C:\Users\Alvin\Documents\GitHub\RecipeCreator\RecipeCreator\Data\obj\Release\netcoreapp3.1\Data.csproj.CoreCompileInputs.cache
+C:\Users\Alvin\Documents\GitHub\RecipeCreator\RecipeCreator\Data\obj\Release\netcoreapp3.1\Data.csproj.CopyComplete
+C:\Users\Alvin\Documents\GitHub\RecipeCreator\RecipeCreator\Data\obj\Release\netcoreapp3.1\Data.dll
+C:\Users\Alvin\Documents\GitHub\RecipeCreator\RecipeCreator\Data\obj\Release\netcoreapp3.1\Data.pdb
+C:\Users\Alvin\Documents\GitHub\RecipeCreator\RecipeCreator\Data\obj\Release\netcoreapp3.1\Data.genruntimeconfig.cache
